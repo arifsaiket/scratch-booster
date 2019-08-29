@@ -121,7 +121,7 @@
                                         <!-- END PERSONAL INFO TAB -->
                                         <!-- CHANGE AVATAR TAB -->
                                         <div class="tab-pane" id="tab_avatar">
-                                            <p> @lang('page.picture_cons') </p>
+                                            <p> @lang('page.picture') </p>
                                             <form class="ajax-form" role="form"  enctype="multipart/form-data">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="action" value="{{ route('picture_update') }}">
@@ -151,7 +151,7 @@
                                         <!-- END CHANGE AVATAR TAB -->
                                         <!-- CHANGE Signature TAB -->
                                         <div class="tab-pane" id="tab_signature">
-                                            <p> @lang('page.signature_cons')   </p>
+                                            <p> @lang('page.signature')   </p>
                                             <form class="ajax-form" role="form"  enctype="multipart/form-data">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="action" value="{{ route('signature_update') }}">
@@ -188,15 +188,15 @@
                                                 <input type="hidden" name="method" value="POST">
 
                                                 <div class="form-group has-error-current_password">
-                                                    <label class="control-label">@lang('page.current_pass') </label>
+                                                    <label class="control-label">@lang('page.current') @lang('page.password') </label>
                                                     <input type="password" name="current_password" class="form-control" />
                                                 </div>
                                                 <div class="form-group has-error-new_password">
-                                                    <label class="control-label">@lang('page.new_pass') </label>
+                                                    <label class="control-label">@lang('page.new') @lang('page.password') </label>
                                                     <input type="password" name="new_password" class="form-control" />
                                                 </div>
                                                 <div class="form-group has-error-confirm_password">
-                                                    <label class="control-label">@lang('page.re_new_pass') </label>
+                                                    <label class="control-label">@lang('page.confirm') @lang('page.new') @lang('page.password') </label>
                                                     <input type="password" name="confirm_password" class="form-control" />
                                                 </div>
                                                 <div class="margin-top-10">

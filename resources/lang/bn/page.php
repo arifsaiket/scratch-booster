@@ -22,6 +22,8 @@ return [
     'form'                  => ':attribute ফরম :type',
 
     'submit'                => 'জমা দিন',
+    'new'                   => 'নতুন',
+    'current'               => 'বর্তমান',
     'confirm'               => 'নিশ্চিত করুন',
     'welcome'               => 'স্বাগত',
     'download'              => 'ডাউনলোড',

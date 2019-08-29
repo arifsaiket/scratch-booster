@@ -22,6 +22,8 @@ return [
     'form'                  => ':attribute Form :type',
 
     'submit'                => 'Submit',
+    'new'                   => 'New',
+    'current'               => 'Current',
     'confirm'               => 'Confirm',
     'welcome'               => 'Welcome',
     'download'              => 'Download',
