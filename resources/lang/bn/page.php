@@ -58,6 +58,8 @@ return [
     'mobile'                => 'মোবাইল',
 
     'profile'               => 'প্রোফাইল',
+    'account'               => 'একাউন্ট',
+    'info'                  => 'ব্যাক্তিগত তথ্য ',
     'picture'               => 'ছবি',
     'password'              => 'পাসওয়ার্ড',
     'signature'             => 'স্বাক্ষর',
