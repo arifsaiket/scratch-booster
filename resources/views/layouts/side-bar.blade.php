@@ -3,9 +3,9 @@
 
 <div class="page-sidebar-wrapper">
     <div class="page-sidebar navbar-collapse collapse">
-        @if(Auth::check() && isset(Auth::user()->menus))
+        @if(Auth::check() && Session::has("menus"))
             <ul class='page-sidebar-menu' data-keep-expanded='false' data-auto-scroll='true' data-slide-speed='200'>
-                @foreach (Auth::user()->menus as $item)
+                @foreach (Session::get("menus") as $item)
                     @if ($item['visible'])
                         <?php $class = $nav == $item['tag'] ? 'active open' : ''; ?>
                         <?php $url = isset($item['url']) ? url($item['url']) : "javascript:;"; ?>

@@ -36,4 +36,8 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    protected function authenticated() {
+        session(["menus" => (new Controller)->menu()]);
+    }
 }
