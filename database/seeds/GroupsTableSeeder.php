@@ -12,10 +12,18 @@ class GroupsTableSeeder extends Seeder
     public function run()
     {
         DB::table('groups')->insert([
-            'name' => 'Super Admin Or Developer',
+            'name' => 'Developer',
             'code' => 'developer',
-            'permissions' => '{"profile":["change","password","signature"],"viewing_menu":["users","groups"]}',
-            'description' => 'Super Admin Or Developer',
+            'permissions' => '{"viewing_menu":["users","groups"]}',
+            'description' => 'Developer',
+            'updated_at' => new DateTime,
+            'created_at' => new DateTime,
+        ]);
+        DB::table('groups')->insert([
+            'name' => 'Super Admin',
+            'code' => 'superadmin',
+            'permissions' => '{"viewing_menu":["users","groups"]}',
+            'description' => 'Super Admin',
             'updated_at' => new DateTime,
             'created_at' => new DateTime,
         ]);
