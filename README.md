@@ -18,7 +18,7 @@ As simple as you install laravel project
 
 ```bash
 # Clone this repository
-git clone https://github.com/arifsaiket/scratch-booster.git
+git clone https://github.com/arifhas/starter17.git
 # Go into the repository
 cd scratch-booster
 # Install dependencies
